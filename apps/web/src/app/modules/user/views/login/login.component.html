@@ -1,0 +1,23 @@
+<main class="vexius-login">
+  <section>
+    <div class="flex justify-center items-center text-7xl mb-10">
+      <vexius-logo [extended]="true"></vexius-logo>
+    </div>
+    <form [formGroup]="login" (ngSubmit)="submitForm()">
+      <input type="email" formControlName="email" placeholder="Email" />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <button type="submit" [disabled]="!login.valid || loading">
+        <span
+          class="loading loading-spinner"
+          *ngIf="loading; else submitFormLabel"
+        ></span>
+        <ng-template #submitFormLabel>Login</ng-template>
+      </button>
+    </form>
+    <a [routerLink]="['/register']">Não tem conta?<br />Crie agora!</a>
+  </section>
+</main>

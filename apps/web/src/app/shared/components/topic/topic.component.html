@@ -1,0 +1,12 @@
+<button
+  type="button"
+  class="vexius-topic"
+  (click)="onToggle()"
+  [disabled]="disabled"
+  [ngClass]="{
+    'vexius-topic__active': data.selected,
+    'cursor-default': disabled
+  }"
+>
+  <span>{{ data.label | lowercase }}</span>
+</button>
