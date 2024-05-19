@@ -1,16 +1,16 @@
 <div class="vexius-create">
   <header class="vexius-create__header">
-    <h2 class="vexius-create__message">Your voice, your space</h2>
+    <h2 class="vexius-create__message">Esse é seu espaço</h2>
     <p class="vexius-create__description">
-      Get inspired, create a captivating title, and share your content with the
-      community. Your ideas are valuable and deserve to be heard!
+      Se inspire, crie um título cativante e compartilhe seu conhecimento com a
+      comunidade. Suas ideias são valiosas!
     </p>
   </header>
   <form [formGroup]="post" (ngSubmit)="submit()" class="vexius-create__form">
     <input
       class="vexius-create__title"
       type="text"
-      placeholder="Title"
+      placeholder="Título"
       formControlName="title"
     />
     <ul class="vexius-create__topics">
@@ -30,7 +30,7 @@
       ></ckeditor>
     </section>
     <footer class="vexius-create__footer">
-      <button type="submit" class="vexius-create__submit">Submit</button>
+      <button type="submit" class="vexius-create__submit">Enviar</button>
     </footer>
   </form>
 </div>

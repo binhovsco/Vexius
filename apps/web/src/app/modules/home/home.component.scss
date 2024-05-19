@@ -105,7 +105,7 @@
       @apply block
         border-l
         border-solid
-        border-gray-200
+        border-[#363C49]
         p-3;
 
       &--fixed {
@@ -128,7 +128,7 @@
         py-3
         border-t
         border-solid
-        border-gray-200;
+        border-[#363C49];
     }
 
     &__contributors-title {

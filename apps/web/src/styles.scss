@@ -70,7 +70,7 @@
   @apply shadow
     border-b
     border-solid
-    border-gray-200;
+    border-[#363C49];
 }
 
 .ck.ck-sticky-panel .ck-sticky-panel__content_sticky {
@@ -78,4 +78,11 @@
   left: 0 !important;
   width: 100vw !important;
   box-shadow: none !important;
+}
+
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+  p,
+  li {
+    @apply text-black;
+  }
 }

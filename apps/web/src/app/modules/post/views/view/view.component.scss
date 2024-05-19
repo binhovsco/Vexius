@@ -28,7 +28,7 @@
       mb-5
       border-b
       border-solid
-      border-gray-200
+      border-[#363C49]
       flex
       justify-between;
   }
@@ -87,7 +87,7 @@
       h3,
       h4 {
         @apply font-bold
-        text-primary;
+          text-primary;
       }
 
       h2 {
@@ -135,6 +135,14 @@
         cursor-pointer
         underline;
       }
+    }
+  }
+}
+
+::ng-deep {
+  .ck {
+    p {
+      @apply text-black;
     }
   }
 }
